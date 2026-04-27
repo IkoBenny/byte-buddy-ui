@@ -1,0 +1,155 @@
+<html>
+	<head>
+		<title>Home | Bet Buddy: Make informed choices today!</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<nav class="crumbs">
+		<ol>
+			<li class="crumb"><a href="#players">Players</a></li>
+			<li class="crumb"><a href="#teams">Teams</a></li>
+			<li class="crumb"><a href="#games">Games</a></li>
+			<li class="crumb"><a href="#coaches">Coaches</a></li>
+			<li class="crumb"><a href="https://sportsbook.draftkings.com/help/how-to-bet/parlay-calculator">Parlay Calculator</a></li>
+			<li class="crumb"><a href="#log">Log</a></li>
+		</ol>
+	</nav>
+	<body>
+		<h1>Bet Buddy</h1>
+		<div id="progress"></div>
+		<div id="log">
+		<h2>Log</h2>
+		</div>
+		<br>
+		<img src="img/court.png"  alt="a realistic wood basketball floor with no lighting" class="center-image" />
+		<div id="players">
+		<label>
+			<h2>Players</h2>
+			<form>
+				<label>
+					date
+					<input type= "datetime"></input>
+				</label>
+				<br>
+				<label>
+					team
+					<input type= "text"></input>
+				</label>
+				<br>
+				<label>
+					first
+					<input type= "text"></input>
+				</label>
+				<br>
+				<label>
+					last
+					<input type= "text"></input>
+				</label>
+				<br>
+				<label>
+					betByte
+					<input type= "text"></input>
+					<br>
+				</label>
+				<button id="find-players-button" class="submit-button">Find</button>
+				<button id="submit-players-button" class="submit-button">Submit</button>
+				<br>
+			</form>
+		</label>
+			<br>
+		</div>
+		<div id="teams">
+		<label>
+			<h2>Teams</h2>
+			<form>
+				<label>
+					date
+					<input type= "datetime"></input>
+				</label>
+				<br>
+				<label>
+					team
+					<input type= "text"></input>
+				</label>
+				<br>
+				<label>
+					betByte
+					<input type= "text"></input>
+				</label>
+				<br>
+				<button id="find-teams-button" class="submit-button">Find</button>
+				<button id="submit-teams-button" class="submit-button" >Submit</button>
+				<br>
+			</form>
+		</label>
+			<br>
+		</div>
+		<div id="games">
+		<label>
+			<h2>Games</h2>
+			<form>
+				<label>
+					date
+					<input type= "datetime"></input>
+				</label>
+				<br>
+				<label>
+					away
+					<input type= "text"></input>
+				</label>
+				<br>
+				<label>
+					home
+					<input type= "text"></input>
+				</label>
+				<br>
+				<label>
+					betByte
+					<input type= "text"></input>
+				</label>
+				<br>
+				<button id="find-games-button" class="submit-button">Find</button>
+				<button id="submit-games-button" class="submit-button">Submit</button>
+				<br>
+			</form>
+		</label>
+			<br>
+		</div>
+		<div id="coaches">
+		<label>
+			<h2>Coaches</h2>
+			<form>
+				<label>
+					date
+					<input type= "datetime"></input>
+				</label>
+				<br>
+				<label>
+					team
+				<input type= "text"></input>
+				</label>
+				<br>
+				<label>
+					first
+					<input type= "text"></input>
+				</label>
+				<br>
+				<label>
+					last
+					<input type= "text"></input>
+				</label>
+				<br>
+				<label>
+					betByte
+					<input type= "text"></input>
+				</label>
+				<br>
+				<button id="find-coaches-button" class="submit-button">Find</button>
+				<button id="submit-coaches-button" class="submit-button">Submit</button>
+				<br>
+			</form>
+		</label>
+			<br>
+		</div>
+	<script src="actions.js"></script>
+	</body>
+</html>
