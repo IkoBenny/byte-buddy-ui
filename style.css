@@ -75,7 +75,7 @@ nav {
     inset 2px 2px 3px rgb(0 0 0 / 0.6);
 }
 
-.player-bet-byte{
+.player-bet-byte, .team-bet-byte{
 	border-style: outset;
 	padding: 10px;
 	border-radius: 5px;
