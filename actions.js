@@ -20,20 +20,23 @@ async function getData(event) {
 		}
 		
     const responseJson = await response.json();
-	
+	const playerTeamP = document.createElement("p");
 	const playersDiv = document.getElementById("players");
-    const playerTeamP = document.createElement("p");
 	playerTeamP.textContent = responseJson.team;
 	playersDiv.append(playerTeamP);
 	responseJson.forEach(player => {
+	const timestamp = player._id.date;
+	const date = new Date(timestamp);
+	const dateP = document.createElement("p");
+	dateP.textContent = date
     const playerContainer = document.createElement("div");
     const playerByteP = document.createElement("p");    
     playerByteP.textContent = player.betByte;
-    playerContainer.append(playerByteP);
+    playerContainer.append(dateP);
+	playerContainer.append(playerByteP);
     playersDiv.append(playerContainer);
 	playerContainer.className = "player-bet-byte";
 });
-	
     console.log(responseJson);
   } catch (error) {
     console.error(error.message);
