@@ -22,21 +22,17 @@ async function getData(event) {
     const responseJson = await response.json();
 	
 	const playersDiv = document.getElementById("players");
-	const getDataPlayerNameP = document.createElement("p");
-	const getDataPlayerTeamP = document.createElement("p");
-	const getDataPlayerByteP = document.createElement("p");
-	
-	const getDataPlayerName = responseJson.player
-	const getDataPlayerTeam = responseJson.team
-	const getDataPlayerByte = responseJson.betByte
-	
-	getDataPlayerNameP.textContent = getDataPlayerName
-	getDataPlayerTeamP.textContent = getDataPlayerTeam
-	getDataPlayerByteP.textContent = getDataPlayerByte
-	
-	playersDiv.append(getDataPlayerNameP);
-	playersDiv.append(getDataPlayerTeamP);
-	playersDiv.append(getDataPlayerByteP);
+    const playerTeamP = document.createElement("p");
+	playerTeamP.textContent = responseJson.team;
+	playersDiv.append(playerTeamP);
+	responseJson.forEach(player => {
+    const playerContainer = document.createElement("div");
+    const playerByteP = document.createElement("p");    
+    playerByteP.textContent = player.betByte;
+    playerContainer.append(playerByteP);
+    playersDiv.append(playerContainer);
+	playerContainer.className = "player-bet-byte";
+});
 	
     console.log(responseJson);
   } catch (error) {
