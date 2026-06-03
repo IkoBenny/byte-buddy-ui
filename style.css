@@ -2,6 +2,20 @@ nav {
   border-bottom: 1px solid black;
 }
 
+
+h2::first-letter, h1::first-letter{
+	color:green;
+	font-size: 3rem;
+	border-bottom: 3px solid black;
+}
+
+h2, h1{
+	font-size: 3rem;
+	border-bottom: 1px dashed green;
+	display: inline-block;
+	
+}
+
 .center-image {
   display: block;
   margin-left: auto;
@@ -25,8 +39,6 @@ nav {
   font-weight: bold;
   padding: 0 3px;
 }
-
-
 
 @keyframes grow-progress {
   from { transform: scaleX(0); }
